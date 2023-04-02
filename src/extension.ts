@@ -177,7 +177,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
-  public static readonly viewType = "in-your-face.openview";
+  public static readonly viewType = "daroga-watcher.openview";
 
   private _view?: vscode.WebviewView;
 
@@ -201,7 +201,7 @@ class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
 
     // This is called every second is decides which doom face to show in the webview
     setInterval(() => {
-      const config = vscode.workspace.getConfiguration("InYourFace");
+      const config = vscode.workspace.getConfiguration("darogawatcher");
       const errorUseWarnings = config.get<boolean>("error.usewarnings");
       let [errors, warnings] = getNumErrors();
       if (errorUseWarnings == true) {
@@ -229,7 +229,7 @@ class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
 function getHtml(doomFace: vscode.Uri, stylesheetUri: vscode.Uri) {
   const [errorNum, errorWar] = getNumErrors();
 
-  const config = vscode.workspace.getConfiguration("InYourFace");
+  const config = vscode.workspace.getConfiguration("darogawatcher");
   const errorUseWarnings = config.get<boolean>("error.usewarnings");
 
   console.log(errorUseWarnings);
