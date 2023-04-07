@@ -1,7 +1,33 @@
-# darogawatcher README
+# **DAROGA WATCHER**
 
-I don't know what to write
+_Pulished By: Avisekh Sabi_
 
-## Features
+_version: 1.0.0_
 
-It is a VS code Extension that takes error and display it in a funny way. It make coding fun.
+---
+
+## **Features**
+
+It's a VS code Extension that **Takes Error** and **Displays** it in a **Funny way**. It make coding fun.
+
+---
+
+## **Usage**
+
+You can see faces that change with the number of source code errors.
+
+![BANNER](https://raw.githubusercontent.com/avisekh3110/darogawatcher/main/assets/banner.jpg)
+
+---
+
+## **Demo Video**
+
+![mehnatSeBanaHuaGif](https://raw.githubusercontent.com/avisekh3110/darogawatcher/main/assets/recorddaroga.gif)
+
+---
+
+[To the Original Repository]("https://github.com/avisekh3110/darogawatcher")
+
+[Shoutout To Mind0bender]("https://github.com/mind0bender")
+
+[Instagram]("https://www.instagram.com/avisekh_sabi/")

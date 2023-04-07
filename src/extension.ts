@@ -208,7 +208,17 @@ class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
         errors += warnings / 2;
       }
       let i = "0";
-      if (errors) i = errors < 5 ? "1" : errors < 10 ? "2" : "3";
+      if (errors)
+        i =
+          errors < 2
+            ? "1"
+            : errors < 5
+            ? "2"
+            : errors < 8
+            ? "3"
+            : errors < 11
+            ? "4"
+            : "5";
       webviewView.webview.html = this.getHtmlContent(webviewView.webview, i);
     }, 1000);
   }
@@ -260,9 +270,14 @@ function getHtml(doomFace: vscode.Uri, stylesheetUri: vscode.Uri) {
       <body>
         <section>
           <img src="${doomFace}">
-          <h2 class=${errorNum ? "alarm" : errorWar ? "yellow" : ""}>
+          <h2>
+          <div class=${errorNum && "alarm"}>
             ${errorNum} ${errorNum === 1 ? "error" : "errors"}
+          </div>
+
+          <div class=${errorWar && "yellow"}>
             ${errorWar} ${errorWar === 1 ? "warning" : "warnings"}
+          </div>
           </h2>
         </section>
       </body>
