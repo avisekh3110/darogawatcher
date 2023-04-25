@@ -1,14 +1,14 @@
 {
-  "name": "darogawatcher",
-  "displayName": "Daroga Watcher",
+  "name": "incrediblewatcher",
+  "displayName": "Incredible Watcher",
   "description": "It is a VS code Extension that takes error and display it in a funny way. It make coding fun.",
   "version": "1.0.0",
   "publisher": "AvisekhSabi",
-  "homepage": "https://github.com/avisekh3110/darogawatcher",
+  "homepage": "https://github.com/avisekh3110/incrediblewatcher",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avisekh3110/darogawatcher"
+    "url": "https://github.com/avisekh3110/incrediblewatcher"
   },
   "engines": {
     "vscode": "^1.77.0"
@@ -35,8 +35,8 @@
     "publisherDisplayName": "Avisekh Sabi"
   },
   "activationEvents": [
-    "onCommand:daroga-watcher.openview.focus",
-    "onView:daroga-watcher.openview"
+    "onCommand:incredible-watcher.openview.focus",
+    "onView:incredible-watcher.openview"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -44,7 +44,7 @@
       "activitybar": [
         {
           "id": "custom-activitybar",
-          "title": "darogawatcher",
+          "title": "incrediblewatcher",
           "icon": "assets/logo_bito.svg"
         }
       ]
@@ -53,14 +53,14 @@
       "custom-activitybar": [
         {
           "type": "webview",
-          "id": "daroga-watcher.openview",
-          "name": "Daroga Watcher",
-          "contextualTitle": "Daroga Watcher"
+          "id": "incredible-watcher.openview",
+          "name": "Incredible Watcher",
+          "contextualTitle": "Incredible Watcher"
         }
       ]
     },
     "configuration": {
-      "title": "darogawatcher",
+      "title": "incrediblewatcher",
       "properties": {
         "InYourFace.error.usewarnings": {
           "type": "boolean",
@@ -71,7 +71,7 @@
     },
     "commands": [
       {
-        "command": "daroga-watcher.openview.focus",
+        "command": "incredible-watcher.openview.focus",
         "category": "In Your Face",
         "title": "Open Sidebar",
         "icon": "$(clear-all)"
