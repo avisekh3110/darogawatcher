@@ -1,4 +1,4 @@
-# **INCREDIBLE WATCHER**
+# **DAROGA WATCHER**
 
 _Pulished By: Avisekh Sabi_
 
@@ -26,7 +26,7 @@ You can see faces that change with the number of source code errors.
 
 ---
 
-[To the Original Repository]("https://github.com/avisekh3110/incrediblewatcher")
+[To the Original Repository]("https://github.com/avisekh3110/darogawatcher")
 
 [Shoutout To Mind0bender]("https://github.com/mind0bender")
 
